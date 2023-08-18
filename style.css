@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato";
+}
+body .main-block {
+  max-width: 900px;
+  margin: 0 auto;
+  height: 600px;
+}
+body h1 {
+  font-size: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(32, 43, 33, 0.6705882353);
+  margin: 0 0 50px 0;
+}
+body .subtitle {
+  letter-spacing: 2px;
+  font-style: italic;
+  margin: 0 0 50px 0;
+}
+body .subtitle ul {
+  font-size: 20px;
+}
+body .subtitle ul li {
+  padding: 15px;
+}
+body .slide-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .slide {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 700px;
+}

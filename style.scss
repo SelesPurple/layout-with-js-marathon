@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+
+body {
+    box-sizing: border-box;
+    // margin-top: 100px;
+    font-family: 'Lato';
+    .main-block {
+        max-width: 900px;
+        margin: 0 auto;
+        height: 600px;
+    }
+    h1 {
+        font-size: 40px;
+        justify-content: center;
+        color: #202b21ab; 
+        margin: 0 0 50px 0 ;
+    }
+    .subtitle {
+        letter-spacing: 2px;
+        font-style: italic;
+        ul {
+            font-size: 20px;
+            li {
+                padding: 15px;
+            }
+        }
+        margin: 0 0 50px 0;
+    }
+
+    .slide-box {
+        width: 100%;
+        display: flex;
+    }
+    .slide {
+        flex-direction: row;
+        line-height: 700px;
+    }
+
+}
