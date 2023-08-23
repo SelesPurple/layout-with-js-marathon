@@ -1,13 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
-
-body {
+* {
     box-sizing: border-box;
-    // margin-top: 100px;
+}
+body {
+   
     font-family: 'Lato';
-    .main-block {
-        max-width: 900px;
-        margin: 0 auto;
-        height: 600px;
+    
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .slide-box {
+        width: 100%;
+        display: flex;
+        padding: 0 20px;
+        .slide {
+            height: 80vh;
+            border-radius: 20px;
+            margin: 10px;
+            cursor: pointer;
+            color: white;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            h3 {
+                
+                font-size: 22px;
+                bottom: 20px;
+                left: 20px;
+                margin: 0;
+            }
+            .active {
+                flex: 10;
+            }
+        }
     }
     h1 {
         font-size: 40px;
@@ -27,13 +56,6 @@ body {
         margin: 0 0 50px 0;
     }
 
-    .slide-box {
-        width: 100%;
-        display: flex;
-    }
-    .slide {
-        flex-direction: row;
-        line-height: 700px;
-    }
+    
 
 }
