@@ -3,10 +3,8 @@
     box-sizing: border-box;
 }
 body {
-   
-    font-family: 'Lato';
-    
     margin: 0;
+    font-family: 'Lato';
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,18 +24,27 @@ body {
             background-position: center;
             background-repeat: no-repeat;
             position: relative;
+            transition: 500ms ease-in-out;
             h3 {
-                
+                position: absolute;
                 font-size: 22px;
                 bottom: 20px;
-                left: 20px;
+                left: 20px; 
                 margin: 0;
+                opacity: 0;
             }
-            .active {
-                flex: 10;
+        }
+        .active {
+            flex: 8; 
+            font-size: 40px;
+            h3 {
+                opacity: 1;
+                transition: opacity 0.3s ease-in;
+
             }
         }
     }
+    
     h1 {
         font-size: 40px;
         justify-content: center;
