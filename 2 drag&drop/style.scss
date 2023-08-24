@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif; 
-    background-color: #e5e5e5;
+    background-color: #f8d0d08c;
     display: flex;
     padding-top: 5rem;
     justify-content: center;
@@ -17,54 +19,59 @@ body {
         margin-bottom: 1rem;
         .col-header {
             width: 150px;
+            height: 1%;
             box-shadow: 4px 4px 9px rgba(198, 198,  198, 0.36);
             border-radius: 20px;
             padding: 0.8rem 1rem;
             color: #fff;
+            p {
+                text-align: center;
+            }
         }
         .placeholder {
             width: 150px;
             height: 66px;
             .item {
                 width: 150px;
-                height: 66px;
                 border: 1px solid #eee;
                 box-shadow: 4px 4px 9px rgba(198, 198,  198, 0.36);
                 border-radius: 20px;
                 background: #f7f6f7;
-                padding: 0.8rem 1rem;
+                vertical-align: middle;
+                line-height: 66px;
                 color: #828282;
                 text-align: center;
                 cursor: grab;
                 .item:active {
                     cursor: grabbing;
                 }
+                
             }
             .hold {
                 border: 5px solid #eee;
-                color: red;
+                color: #5e97e0;
             }
             .hide {
                 display: none;
             }
         
         }
+        .hovered {
+            border-top: 2px solid #e7b0de;
+        }
+
     }
     .start {
-        background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+        background: linear-gradient(0deg, rgba(245,151,199,1) 0%, rgba(245,72,110,1) 100%);
 
     }
     .progress {
-        background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
-        
+        background: linear-gradient(0deg, rgba(169,93,236,1) 0%, rgba(240,81,245,1) 100%);
     }
     .done{
-        background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+        background: linear-gradient(0deg, rgba(93,231,236,1) 0%, rgba(126,113,241,1) 100%);
         
     }
-    .hovered {
-        border-top: 2px solid #8ed7ed;
-    }
+    
     
 }
-

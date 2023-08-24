@@ -9,7 +9,7 @@ for (const placeholder of placeholders) {
     placeholder.addEventListener('dragover', dragover) // если элемент над плейсом
     placeholder.addEventListener('dragenter', dragenter) // элемент на территории плейса 
     placeholder.addEventListener('dragleave', dragleave) // элемент перетащили, но вышли
-    placeholder.addEventListener('dragdrop', dragdrop) // отпустили
+    placeholder.addEventListener('drop', dragdrop) // отпустили
 }
 function dragstart(event) {
      //event target это и есть элемент
@@ -17,8 +17,8 @@ function dragstart(event) {
     setTimeout(() => 
         event.target.classList.add('hide'), 0) //функция будет вызвана после выполнения синхронноого кода, даже если в таймере 0
 }
-function dragend(event) {
-    event.target.classList.remove('hold', 'hide')
+function dragend (event) {
+    event.target.className = 'item'
 }
 
 function dragover (event) {
@@ -36,5 +36,6 @@ function dragleave (event) {
 }
 
 function dragdrop (event) {
+    event.target.classList.remove('hovered')
     event.target.append(item)
 }

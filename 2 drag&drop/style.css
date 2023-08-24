@@ -1,11 +1,13 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #e5e5e5;
+  background-color: rgba(248, 208, 208, 0.5490196078);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,11 +30,15 @@ body .row {
 }
 body .row .col-header {
   width: 150px;
+  height: 1%;
   -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
           box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
   padding: 0.8rem 1rem;
   color: #fff;
+}
+body .row .col-header p {
+  text-align: center;
 }
 body .row .placeholder {
   width: 150px;
@@ -40,13 +46,13 @@ body .row .placeholder {
 }
 body .row .placeholder .item {
   width: 150px;
-  height: 66px;
   border: 1px solid #eee;
   -webkit-box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
           box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
   border-radius: 20px;
   background: #f7f6f7;
-  padding: 0.8rem 1rem;
+  vertical-align: middle;
+  line-height: 66px;
   color: #828282;
   text-align: center;
   cursor: -webkit-grab;
@@ -58,23 +64,23 @@ body .row .placeholder .item .item:active {
 }
 body .row .placeholder .hold {
   border: 5px solid #eee;
-  color: red;
+  color: #5e97e0;
 }
 body .row .placeholder .hide {
   display: none;
 }
+body .row .hovered {
+  border-top: 2px solid #e7b0de;
+}
 body .start {
-  background: -webkit-gradient(linear, left top, right top, from(#ff85e4), color-stop(179.25%, #229efd));
-  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(245, 151, 199)), to(rgb(245, 72, 110)));
+  background: linear-gradient(0deg, rgb(245, 151, 199) 0%, rgb(245, 72, 110) 100%);
 }
 body .progress {
-  background: -webkit-gradient(linear, left top, right top, from(#209cff), to(#68e0cf));
-  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(169, 93, 236)), to(rgb(240, 81, 245)));
+  background: linear-gradient(0deg, rgb(169, 93, 236) 0%, rgb(240, 81, 245) 100%);
 }
 body .done {
-  background: -webkit-gradient(linear, left top, right top, from(#84fab0), to(#8fd3f4));
-  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
-}
-body .hovered {
-  border-top: 2px solid #8ed7ed;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(93, 231, 236)), to(rgb(126, 113, 241)));
+  background: linear-gradient(0deg, rgb(93, 231, 236) 0%, rgb(126, 113, 241) 100%);
 }
