@@ -73,14 +73,14 @@ body .row .hovered {
   border-top: 2px solid #e7b0de;
 }
 body .start {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(245, 151, 199)), to(rgb(245, 72, 110)));
-  background: linear-gradient(0deg, rgb(245, 151, 199) 0%, rgb(245, 72, 110) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(245, 151, 199)), color-stop(70%, rgb(245, 72, 110)));
+  background: linear-gradient(0deg, rgb(245, 151, 199) 0%, rgb(245, 72, 110) 70%);
 }
 body .progress {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(169, 93, 236)), to(rgb(240, 81, 245)));
-  background: linear-gradient(0deg, rgb(169, 93, 236) 0%, rgb(240, 81, 245) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(240, 81, 245)), color-stop(70%, rgb(169, 93, 236)));
+  background: linear-gradient(0deg, rgb(240, 81, 245) 0%, rgb(169, 93, 236) 70%);
 }
 body .done {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgb(93, 231, 236)), to(rgb(126, 113, 241)));
-  background: linear-gradient(0deg, rgb(93, 231, 236) 0%, rgb(126, 113, 241) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(93, 231, 236)), color-stop(70%, rgb(126, 113, 241)));
+  background: linear-gradient(0deg, rgb(93, 231, 236) 0%, rgb(126, 113, 241) 70%);
 }
