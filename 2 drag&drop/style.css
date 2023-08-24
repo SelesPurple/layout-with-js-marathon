@@ -56,6 +56,10 @@ body .row .placeholder .item .item:active {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
+body .row .placeholder .hold {
+  border: 5px solid red;
+  color: red;
+}
 body .start {
   background: -webkit-gradient(linear, left top, right top, from(#ff85e4), color-stop(179.25%, #229efd));
   background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);

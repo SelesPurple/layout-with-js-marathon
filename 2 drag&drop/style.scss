@@ -40,6 +40,10 @@ body {
                     cursor: grabbing;
                 }
             }
+            .hold {
+                border: 5px solid red;
+                color: red;
+            }
         }
     }
     .start {
@@ -55,26 +59,4 @@ body {
         
     }
     
-}
-
-
-
-
-
-
-
-
-.row {
-}
-.col-header {
-}
-.start {
-}
-.progress {
-}
-.done {
-}
-.placeholder {
-}
-.item {
 }
