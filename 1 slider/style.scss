@@ -60,6 +60,7 @@ body {
                 position: absolute;
                 left: 40%;
                 top: 10%;
+                right: 5%; 
             }
             span {
                 display: inline;
@@ -69,27 +70,19 @@ body {
                 bottom: 10%;
             }
         }
-    }
+    
         .active {
             flex: 8; 
             font-size: 40px;
             position: relative;
-            h3 {
+            h3, p, span {
                 opacity: 1;
-                transition: opacity 0.3s ease-in 0.4s;
+                transition: opacity 0.9s ease-in 0.7s;
 
             }
-            p {
-                opacity: 1;
-                transition: opacity 0.3s ease-in 0.4s;
-            }
-            span {
-                opacity: 1;
-                transition: opacity 0.3s ease-in 0.4s;
-            }
         }
-    }
     
+    }
     h1 {
         display: flex;
         font-size: 40px;
@@ -109,5 +102,4 @@ body {
         margin: 0 0 50px 50px;
     }
 
-    
 }
