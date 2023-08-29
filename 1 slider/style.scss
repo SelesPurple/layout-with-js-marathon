@@ -45,7 +45,7 @@ body {
             transition: 500ms ease-in-out;
             h3, p, span {
                 display: inline;
-                position: absolute;
+                // position: absolute;
                 margin: 0;
                 opacity: 0;
                 line-height: 1.5;
@@ -62,21 +62,22 @@ body {
                 top: 60px; 
                 left: 30%;
                 right: 20px;
+                bottom: 5%;
                 padding: 10px;
                 border: 1px solid;
                 border-radius: 15px;
-                background-color: rgba(226, 238, 250, 0.75);
+                background-color: rgba(226, 238, 250, 0.75); 
                 color:rgb(77, 89, 99); 
             }
             span {
-                bottom: 20px;
+                bottom: 20px; 
                 right: 20px; 
             }
         }
     
         .active {
             flex: 8; 
-            font-size: 25px;
+            font-size: 25px; 
             position: relative;
             h3, p, span {
                 opacity: 1;

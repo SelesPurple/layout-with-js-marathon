@@ -67,7 +67,6 @@ body .slide-box .slide {
 }
 body .slide-box .slide h3, body .slide-box .slide p, body .slide-box .slide span {
   display: inline;
-  position: absolute;
   margin: 0;
   opacity: 0;
   line-height: 1.5;
@@ -83,6 +82,7 @@ body .slide-box .slide p {
   top: 60px;
   left: 30%;
   right: 20px;
+  bottom: 5%;
   padding: 10px;
   border: 1px solid;
   border-radius: 15px;
