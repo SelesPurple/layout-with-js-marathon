@@ -9,6 +9,7 @@ const timeEl = document.querySelector('#time')
 const board = document.querySelector('#board')
 let time = 0
 let score = 0
+let miss = 0
 
 const colors = ['#f46f6f', '#f5a0f5', 'rgb(147, 179, 244)', 'rgb(149, 243, 169)', 'rgb(220, 243, 149)', 'rgb(125, 107, 245)']
 
@@ -32,9 +33,16 @@ timeList.addEventListener('click', event => { // делегирование со
 board.addEventListener('click', event => {
     if (event.target.classList.contains('circle')) {
         score++
-        event.target.remove()
-        createRandomCircle()
+        console.log('score', score)
+    } else if (event.target.closest('.circle') === null) {
+        miss++
+        console.log(score)
+        console.log(miss)
+        
     }
+    event.target.remove()
+    createRandomCircle()
+
 })
 // DEBUG
 // startGame()
@@ -64,6 +72,7 @@ function setTime (value) {
 function finishGame () {
     timeEl.parentNode.classList.add('hide')
     board.innerHTML = `<h1>Score: <span class='primary'>${score}</span></h1>`
+
 }
 
 function createRandomCircle() {
